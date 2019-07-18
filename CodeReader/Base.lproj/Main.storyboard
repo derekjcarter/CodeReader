@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B0K-bi-dGX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="6su-PY-OE1">
+            <objects>
+                <viewController id="B0K-bi-dGX" customClass="ViewController" customModule="CodeReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xpT-9d-mEX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kji-EI-4zJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qba-q7-QE8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan QR Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmi-Qa-jYL">
+                                        <rect key="frame" x="104" y="25" width="167.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zmi-Qa-jYL" firstAttribute="centerY" secondItem="qba-q7-QE8" secondAttribute="centerY" id="Klr-ex-gkb"/>
+                                    <constraint firstAttribute="height" constant="80" id="U3Q-Dp-1mt"/>
+                                    <constraint firstItem="zmi-Qa-jYL" firstAttribute="centerX" secondItem="qba-q7-QE8" secondAttribute="centerX" id="cmq-Mv-fBo"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1E-iv-xF7">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No QR Code Detected" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.33000000000000002" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAl-zJ-uU4">
+                                <rect key="frame" x="0.0" y="567" width="375" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="tSj-zV-BNc"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="ugG-73-tn2"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cameraFocus" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-MP-zir">
+                                <rect key="frame" x="100" y="246" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X6L-MP-zir" secondAttribute="height" multiplier="1:1" id="7PQ-Bj-otg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zQO-ow-7le" firstAttribute="trailing" secondItem="X6L-MP-zir" secondAttribute="trailing" constant="100" id="3Ux-BO-Ubz"/>
+                            <constraint firstItem="b1E-iv-xF7" firstAttribute="leading" secondItem="zQO-ow-7le" secondAttribute="leading" id="4nr-MX-afs"/>
+                            <constraint firstItem="AAl-zJ-uU4" firstAttribute="top" secondItem="b1E-iv-xF7" secondAttribute="top" id="5Co-hb-BG2"/>
+                            <constraint firstItem="qba-q7-QE8" firstAttribute="leading" secondItem="zQO-ow-7le" secondAttribute="leading" id="Fvz-eK-ayt"/>
+                            <constraint firstItem="kji-EI-4zJ" firstAttribute="leading" secondItem="zQO-ow-7le" secondAttribute="leading" id="G4x-A8-sac"/>
+                            <constraint firstItem="qba-q7-QE8" firstAttribute="top" secondItem="zQO-ow-7le" secondAttribute="top" id="HOJ-gg-baK"/>
+                            <constraint firstItem="kji-EI-4zJ" firstAttribute="top" secondItem="xpT-9d-mEX" secondAttribute="top" id="MUT-5S-C4A"/>
+                            <constraint firstItem="kji-EI-4zJ" firstAttribute="trailing" secondItem="zQO-ow-7le" secondAttribute="trailing" id="Q5b-sq-llB"/>
+                            <constraint firstItem="zQO-ow-7le" firstAttribute="bottom" secondItem="AAl-zJ-uU4" secondAttribute="bottom" constant="20" id="ayc-9H-1zD"/>
+                            <constraint firstItem="AAl-zJ-uU4" firstAttribute="trailing" secondItem="zQO-ow-7le" secondAttribute="trailing" id="d8M-Eb-min"/>
+                            <constraint firstItem="b1E-iv-xF7" firstAttribute="bottom" secondItem="xpT-9d-mEX" secondAttribute="bottom" id="eg9-ll-VMl"/>
+                            <constraint firstItem="X6L-MP-zir" firstAttribute="centerY" secondItem="xpT-9d-mEX" secondAttribute="centerY" id="fwN-dD-Gp4"/>
+                            <constraint firstItem="qba-q7-QE8" firstAttribute="bottom" secondItem="kji-EI-4zJ" secondAttribute="bottom" id="gQY-TH-pk0"/>
+                            <constraint firstItem="AAl-zJ-uU4" firstAttribute="leading" secondItem="zQO-ow-7le" secondAttribute="leading" id="lJe-GE-TYu"/>
+                            <constraint firstItem="X6L-MP-zir" firstAttribute="centerX" secondItem="xpT-9d-mEX" secondAttribute="centerX" id="lZx-qU-ceM"/>
+                            <constraint firstItem="b1E-iv-xF7" firstAttribute="trailing" secondItem="zQO-ow-7le" secondAttribute="trailing" id="qQq-IT-8z0"/>
+                            <constraint firstItem="qba-q7-QE8" firstAttribute="trailing" secondItem="zQO-ow-7le" secondAttribute="trailing" id="rk4-Cj-xKp"/>
+                            <constraint firstItem="X6L-MP-zir" firstAttribute="leading" secondItem="zQO-ow-7le" secondAttribute="leading" constant="100" id="y4V-zF-GNh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zQO-ow-7le"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraFocusImageView" destination="X6L-MP-zir" id="Ahj-BY-lhO"/>
+                        <outlet property="headerBackgroundView" destination="kji-EI-4zJ" id="nGk-Fd-xfw"/>
+                        <outlet property="headerView" destination="qba-q7-QE8" id="6f8-ue-qdl"/>
+                        <outlet property="messageBackgroundView" destination="b1E-iv-xF7" id="f5f-oc-hO1"/>
+                        <outlet property="messageLabel" destination="AAl-zJ-uU4" id="2vr-bb-KNQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VfO-3l-5Cr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cameraFocus" width="100" height="100"/>
+    </resources>
+</document>
